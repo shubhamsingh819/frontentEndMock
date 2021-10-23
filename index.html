@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+    <style></style>
+  </head>
+  <body>
+
+    
+  <h1 style="text-align: center;">Performance feedbak fomr</h1>
+  <Hr></Hr>
+    <h2>Employee Details </h2> 
+    <p>
+      firstName: <input type="text" id="user" placeholder="First name "/>
+
+    </p>
+    <p>
+      middle Name: <input type="text" placeholder="middle name "/>
+
+    </p>
+    <p>
+      lastName: <input type="text" placeholder="last name "/>
+
+    </p>
+    <p>
+      Mobile Number: <input type="number"  id="user1" placeholder="Mobile Number "/>
+
+    </p><p>
+      Email: <input type="email" id="user2" placeholder="email "/>
+
+    </p>
+    
+    <p>
+      Select Category OF feedback:<select name="Category feedback" required>
+      <option value="">Choose your Category of feedback</option>
+      <option value="">Q1</option>
+      <option value="">Q2</option>
+      <option value="">Q3</option>
+      <option value="">Q4</option>
+      
+      <option value="">Q5</option>
+      </select>
+    </p>
+
+    <p>
+      Rating: <select name="Rating" required>
+        <option value="">Choose your Rating</option>
+      <option value="">Poor</option>
+      <option value="">Not Satisfied</option>
+      <option value="">neutral</option>
+      <option value="">satisfied</option>
+      <option value="">verySatisfied</option>
+      </select>
+    </p>
+
+    <p>
+      Remarks: <input type="text" placeholder="Remarks" >
+    </p>
+ <p><span id="display"></span></p>
+ <p><span id="display1"></span></p>
+ <p><span id="display3"></span></p>
+
+  
+  <button type="button" onclick="displayInput();">button</Button>
+
+  
+<script>
+ function displayInput() {
+   document.getElementById("display").innerHTML=document.getElementById('user').value;
+   document.getElementById("display1").innerHTML=document.getElementById('user1').value;
+   document.getElementById("display3").innerHTML=document.getElementById('user2').value;
+
+ }
+
+
+</script>
+  </body>
+</html>
+
+
+
+
+
+
